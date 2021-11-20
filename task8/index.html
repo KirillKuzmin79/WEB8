@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.magnific-popup.js"></script>
     <title>Форма</title>
 </head>
+
+<body>
+    <a href="#popup" class="button">
+        Заполнить форму
+    </a>
+
+    <div id="popup" class="popup">
+        <a href="#" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__form">
+                    <form action="https://formcarry.com/s/ClkxyW6IPH1" method="POST" accept-charset="UTF-8"
+                        class="login">
+                        <a href="#" data-close class="popup__close">&times;</a>
+                        <div class="popup__title">Форма</div>
+                        <input type="email" required placeholder="Email" id="email" name="email">
+                        <input type="text" required placeholder="Username" id="username" name="username">
+                        <input type="password" required placeholder="Password" id="password" name="password">
+                        <textarea name="comments" required placeholder="Comment or Message"></textarea>
+                        <div class="checkbox">
+                            <input id="formAgreement" required type="checkbox" class="checkbox__input" name="checkbox">
+                            <label for="formAgreement" class="checkbox__label">согласен с<a
+                                    href="https://www.kubsu.ru/"> политикой кубгу</a></label>
+                        </div>
+                        <button class="button__form">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
